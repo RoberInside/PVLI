@@ -11,6 +11,11 @@ var PlayScene = {
   	  this.game.world.centerX, this.game.world.centerY, 'ship'
   	);
   	this.ship.anchor.setTo(0.5, 0.5);
+    
+    this.asteroid = this.game.add.sprite(
+        700, this.game.world.centerY, 'asteroid'
+      );
+    this.asteroid.anchor.setTo(0.5, 0.5);
   },
 
   update: function  () {
