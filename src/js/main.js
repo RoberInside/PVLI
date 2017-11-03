@@ -40,6 +40,8 @@ window.onload = function () {
   game.state.add('boot', BootScene);
   game.state.add('preloader', PreloaderScene);
   game.state.add('play', PlayScene);
+  //game.state.add('menu', MenuScene);
+  //game.state.add('pause', PauseScene);
 
   game.state.start('boot');
 };
