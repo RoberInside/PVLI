@@ -1,4 +1,10 @@
 'use strict';
+var Player = require('./Player.js');
+var Asteroid = require('./Asteroid.js');
+
+
+
+var MAX_ASTEROIDS = 50;
 
 var PlayScene = {
   create: function () {
@@ -12,38 +18,36 @@ var PlayScene = {
     initObjects(this);
   },
 
-  update: function  () {
-   moveShip(this);
+  update: function () {
+   this.ship.move(this.input.mousePointer.x, this.input.mousePointer.y);
    moveAsteroids(this);
   }
-  
-
 };
-
+	
 module.exports = PlayScene;
 function initObjects(playScene){
-      playScene.ship = playScene.game.add.sprite(
-     playScene.game.world.centerX, playScene.game.world.centerY, 'ship'
-   );
+   playScene.ship = new Player(playScene, playScene.game.world.centerX, playScene.game.world.centerY);
    playScene.ship.anchor.setTo(0.5, 0.5);
-    
-    playScene.asteroid = playScene.game.add.sprite(
-        700, playScene.game.world.centerY, 'asteroid'
-      );
-    playScene.asteroid.anchor.setTo(0.5, 0.5);
-    playScene.game.physics.arcade.enable(playScene.asteroid);
-    playScene.asteroid.body.velocity.x = -100;
-}
-function moveShip(playScene) {
-   var ps = playScene;
-   var ship = playScene.ship;
-   ship.x = ps.input.mousePointer.x;
-   ship.y = ps.input.mousePointer.y;
+   
+   playScene.game.add.existing(playScene.ship)
+
+   var asteroids = playScene.game.add.group();
+
+   var info = {};//JSON_File
+   for (var i = 0; i < MAX_ASTEROIDS; i++) {
+   	asteroids.add(new Asteroid(playScene));
+   }
 }
 
-function moveAsteroids(playScene) {
+function moveAsteroids(asterois) {
    var ps = playScene;
    var a = ps.asteroid;
 
    a.body.velocity.y = 100 +(ps.game.rnd.integerInRange(-50, 50));
+}
+
+function initPhysics(state) {
+  state.game.physics.startSystem(Phaser.Physics.ARCADE);
+
+
 }
