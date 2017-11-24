@@ -1,0 +1,36 @@
+- **7 Nov** - A (19 Nov)
+  - Mov. personaje
+  - Enemigos definidos (IA-Disparo)
+  - Obstáculos
+  - Terminar definir GDD
+  - Ajustar planificación
+- A(19 Nov) - B(1 Dic)
+  - HUD
+  - Puntuación
+  - Mini-Bosses
+  - Tiles?
+- B(1 Dic) - 8 Dic
+  - HUD
+  - Nv 1 Básico Jugable
+  - Comenzar Sprites
+  - Presentación Hito 1
+- 8 Dic - C(13 Dic)
+  - Empezar Tienda
+  - Bosses &quot;Finales&quot;
+  - Bonus de escena
+- C(13 Dic) - 18 Dic
+  - Menus
+  - Sprites?
+  - Presentación Hito 2
+- 18 Dic - D(2 Ene)
+  - (vacaciones)
+  - Replicar niveles
+- D(2 Ene) - E(17 Ene)
+  - Adicionales?
+  - Efectos
+- E(17 Ene) - **23 Ene**
+  - TERMINAR JUEGO
+- 23 Ene - 30 Ene
+  - Pág Web
+  - Presentacion final
+  - Fin de proyecto
