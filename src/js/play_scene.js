@@ -1,49 +1,47 @@
 'use strict';
 var Player = require('./Player.js');
-var Asteroid = require('./Asteroid.js');
+var Enemy = require('./Enemy.js');
 
 
 
-var MAX_ASTEROIDS = 50;
+const MAX_ENEMIES = 50;
 
 var PlayScene = {
   create: function () {
    //Provisional Background. TODO: make the BG an animation
-   var bg = this.game.add.sprite(
+    this.bullets = []
+    this.bg = this.game.add.sprite(
       this.game.world.centerX, this.game.world.centerY, 'bg'
     );
-   bg.anchor.setTo(0.5, 0.5);
+  this.bg.anchor.setTo(0.5, 0.5);
    //Enable Physics engine
-   this.game.physics.startSystem(Phaser.Physics.ARCADE);
-    initObjects(this);
+  this.game.physics.startSystem(Phaser.Physics.ARCADE);
+  initObjects(this);
   },
 
   update: function () {
    this.ship.move(this.input.mousePointer.x, this.input.mousePointer.y);
-   moveAsteroids(this);
+   this.enemies.forEach((e)=> e.update());
+   console.log(this.bullets.lenght);
   }
 };
-	
+
 module.exports = PlayScene;
 function initObjects(playScene){
-   playScene.ship = new Player(playScene, playScene.game.world.centerX, playScene.game.world.centerY);
+   playScene.ship = new Player(playScene, playScene.game, playScene.game.world.centerX, playScene.game.world.centerY);
    playScene.ship.anchor.setTo(0.5, 0.5);
-   
+
    playScene.game.add.existing(playScene.ship)
 
-   var asteroids = playScene.game.add.group();
+   playScene.enemies = playScene.game.add.group();
 
-   var info = {};//JSON_File
-   for (var i = 0; i < MAX_ASTEROIDS; i++) {
-   	asteroids.add(new Asteroid(playScene));
+/*
+   for (var i = 0; i < MAX_ENEMIES; i++) {
+   	enemies.add(new Enemy(playScene));
    }
-}
+   */
+   playScene.enemies.add(new Enemy(playScene, playScene.game, window.innerWidth/2, 0));
 
-function moveAsteroids(asterois) {
-   var ps = playScene;
-   var a = ps.asteroid;
-
-   a.body.velocity.y = 100 +(ps.game.rnd.integerInRange(-50, 50));
 }
 
 function initPhysics(state) {

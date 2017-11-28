@@ -1,8 +1,10 @@
-var Player = function (state, x, y, health) {
-	Phaser.Sprite.call(this, state, x, y, 'player');
+var Player = function (state, game, x, y, health) {
+	Phaser.Sprite.call(this, game, x, y, 'ship');
 	this.health = health || 100;
 	this.anchor.set( 0.5, 0.5);
 	this.weapon = {};
+	this.game = game;
+	this.game.physics.enable(this);
 	//this.setPhysics();
 };
 

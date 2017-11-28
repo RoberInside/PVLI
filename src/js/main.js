@@ -24,7 +24,8 @@ var PreloaderScene = {
     // TODO: load here the assets for the game
     this.game.load.image('bg', 'images/background.png');
     this.game.load.image('ship', 'images/ship.png');
-    this.game.load.image('asteroid', 'images/asteroid.png' );
+    this.game.load.image('enemy', 'images/enemy.png');
+    this.game.load.image('shoot', 'images/shoot.png')
   },
 
   create: function () {

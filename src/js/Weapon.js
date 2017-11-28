@@ -1,4 +1,4 @@
-var Weapon = function (type) {
+/*var Weapon = function (type) {
 	this.cadency;
 	this.damage;
 	this.range;
@@ -33,3 +33,4 @@ Weapon.prototype.shoot = function() {
 	*/
 	var proyectile = new Proyectile (this.sprite, this.damage, this.velocity, this.range);
 };
+*/
