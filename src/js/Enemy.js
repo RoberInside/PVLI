@@ -29,7 +29,7 @@ Enemy.prototype.update = function () {
 Enemy.prototype.shoot = function () {
 	if (!this.hasShot){
 		this.state.bullets.push(new Projectile(this.state, this.game, this.x, this.y, -5, 0));
-		hasShot = true;
+		this.hasShot = true;
 	}
 };	
 module.exports = Enemy;

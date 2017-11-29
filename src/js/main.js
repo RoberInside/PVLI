@@ -6,11 +6,12 @@ var PlayScene = require('./play_scene.js');
 var BootScene = {
   preload: function () {
     // load here assets required for the loading screen
-    this.game.load.image('preloader_bar', 'images/preloader_bar.png');
+     this.game.load.image('button', 'images/button.png');
+     this.game.load.image('menuBg', 'images/menuBg.jpg');
   },
 
   create: function () {
-    this.game.state.start('preloader');
+    this.game.state.start('menu');
   }
 };
 
@@ -25,15 +26,67 @@ var PreloaderScene = {
     this.game.load.image('bg', 'images/background.png');
     this.game.load.image('ship', 'images/ship.png');
     this.game.load.image('enemy', 'images/enemy.png');
-    this.game.load.image('shoot', 'images/shoot.png')
+    this.game.load.image('shoot', 'images/shoot.png');
   },
 
   create: function () {
     this.game.state.start('play');
+
     console.log('gig');
   }
 };
 
+/*var PauseScene = {
+  preload: function(){
+    this.game.load.image('button', 'images/button.png');
+
+  },
+ 
+  create: function(){
+    
+//this.game.state.start('pause');
+    var key = game.input.keyboard.addKey(Phaser.keyboard.ESC);
+    key.onDown.add(pauseMenu, this);
+    
+  },
+
+  pauseMenu: function() {
+
+     var button = game.add.button(game.world.centerX, game.world.centerY, 'button',
+     actionOnClick, this, 2, 1, 0);
+  },
+  actionOnClick: function() {
+    
+    button != button;
+
+  },
+};*/
+var MenuScene = {
+preload: function(){
+
+  this.game.load.image('preloader_bar', 'images/preloader_bar.png');
+ 
+
+ this.menuBg = this.game.add.sprite(
+      this.game.world.centerX, this.game.world.centerY, 'menuBg'
+    );
+  this.menuBg.anchor.setTo(0.5, 0.5);
+
+},
+start: function(){
+
+      this.game.state.start('preloader');
+},
+
+create: function(){
+
+    var button = this.game.add.button(this.game.world.centerX - 150, 
+      this.game.world.centerY, 'button',this.start, this, 0, 0, 0);    
+
+},
+
+
+};
 
 window.onload = function () {
 
@@ -42,7 +95,7 @@ window.onload = function () {
   game.state.add('boot', BootScene);
   game.state.add('preloader', PreloaderScene);
   game.state.add('play', PlayScene);
-  //game.state.add('menu', MenuScene);
+  game.state.add('menu', MenuScene);
   //game.state.add('pause', PauseScene);
 
   game.state.start('boot');

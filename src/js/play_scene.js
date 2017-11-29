@@ -22,7 +22,7 @@ var PlayScene = {
   update: function () {
    this.ship.move(this.input.mousePointer.x, this.input.mousePointer.y);
    this.enemies.forEach((e)=> e.update());
-   console.log(this.bullets.lenght);
+   for (var b of this.bullets) b.showPosition();
   }
 };
 
@@ -30,7 +30,6 @@ module.exports = PlayScene;
 function initObjects(playScene){
    playScene.ship = new Player(playScene, playScene.game, playScene.game.world.centerX, playScene.game.world.centerY);
    playScene.ship.anchor.setTo(0.5, 0.5);
-
    playScene.game.add.existing(playScene.ship)
 
    playScene.enemies = playScene.game.add.group();
