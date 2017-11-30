@@ -1,0 +1,645 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"wi",
+				"width"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"valu",
+				"value"
+			],
+			[
+				"set",
+				"setPath"
+			],
+			[
+				"val",
+				"values"
+			],
+			[
+				"He",
+				"HEIGHT"
+			],
+			[
+				"re",
+				"rescale"
+			],
+			[
+				"mou",
+				"mousePressed"
+			],
+			[
+				"m",
+				"mouseY"
+			],
+			[
+				"fun",
+				"fun\tFunction"
+			],
+			[
+				"can",
+				"canCreate"
+			],
+			[
+				"iner",
+				"inertia"
+			],
+			[
+				"mar",
+				"marcado"
+			],
+			[
+				"se",
+				"second"
+			],
+			[
+				"pr",
+				"proto\tPrototype"
+			],
+			[
+				"Pr",
+				"Projectile"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"Pro",
+				"Projectile"
+			],
+			[
+				"P",
+				"Player"
+			],
+			[
+				"new",
+				"newWeapon"
+			],
+			[
+				"ca",
+				"cadency"
+			],
+			[
+				"shi",
+				"Ship"
+			],
+			[
+				"p",
+				"prototype"
+			],
+			[
+				"da",
+				"damage"
+			],
+			[
+				"pl",
+				"Player"
+			],
+			[
+				"as",
+				"asteroids"
+			],
+			[
+				"for",
+				"for\tfor (…) {…}"
+			],
+			[
+				"cen",
+				"centerX"
+			],
+			[
+				"po",
+				"pos_y"
+			],
+			[
+				"pos",
+				"pos_x"
+			],
+			[
+				"ve",
+				"velocity"
+			],
+			[
+				"play",
+				"playScene"
+			],
+			[
+				"byte",
+				"bytes_copied"
+			],
+			[
+				"file",
+				"file_path"
+			],
+			[
+				"get",
+				"getc"
+			],
+			[
+				"string",
+				"string_size"
+			],
+			[
+				"size",
+				"sizeof"
+			],
+			[
+				"used",
+				"used1"
+			],
+			[
+				"str",
+				"string"
+			],
+			[
+				"n",
+				"N"
+			],
+			[
+				"que",
+				"queue"
+			],
+			[
+				"par",
+				"particles"
+			],
+			[
+				"au",
+				"acumulator"
+			],
+			[
+				"ger",
+				"getForce"
+			],
+			[
+				"vec",
+				"vector\tstd::vector"
+			],
+			[
+				"pa",
+				"Particle"
+			],
+			[
+				"Par",
+				"Particle"
+			],
+			[
+				"fro",
+				"_force"
+			],
+			[
+				"vel",
+				"_vel"
+			],
+			[
+				"fo",
+				"force"
+			],
+			[
+				"ge",
+				"getY"
+			],
+			[
+				"v",
+				"v1"
+			],
+			[
+				"pla",
+				"player"
+			],
+			[
+				"player",
+				"playerPos"
+			],
+			[
+				"x",
+				"_x"
+			],
+			[
+				"trhe",
+				"thread_1"
+			],
+			[
+				"nullptr",
+				"nullptr"
+			],
+			[
+				"fT",
+				"fThumbRY"
+			],
+			[
+				"T",
+				"fThumbRY"
+			],
+			[
+				"f",
+				"fprintf\tfprintf …"
+			],
+			[
+				"_",
+				"_alto"
+			],
+			[
+				"_a",
+				"_ancho"
+			],
+			[
+				"laro",
+				"_largo"
+			],
+			[
+				"ancho",
+				"_ancho"
+			],
+			[
+				"Cons",
+				"console"
+			],
+			[
+				"e",
+				"elemento"
+			],
+			[
+				"con",
+				"const_iterator"
+			],
+			[
+				"c",
+				"colaPacientes"
+			],
+			[
+				"tr",
+				"throw"
+			],
+			[
+				"it",
+				"it2Fin"
+			],
+			[
+				"it1",
+				"it1Fin"
+			],
+			[
+				"prto",
+				"prototype"
+			],
+			[
+				"proto",
+				"prototype"
+			],
+			[
+				"num",
+				"numNodosAux"
+			],
+			[
+				"imag",
+				"images"
+			],
+			[
+				"Game",
+				"GameOver"
+			],
+			[
+				"game",
+				"gameOver"
+			],
+			[
+				"lo",
+				"load"
+			],
+			[
+				"gameOver",
+				"gameover_scene"
+			],
+			[
+				"requi",
+				"Require"
+			],
+			[
+				"charca",
+				"character-list"
+			],
+			[
+				"hero",
+				"heroes"
+			],
+			[
+				"mon",
+				"monsterSlime"
+			],
+			[
+				"her",
+				"heroWizard"
+			],
+			[
+				"rnd",
+				"rnd2"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 35.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Set Syntax: Ja",
+				"Set Syntax: JavaScript"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"py",
+			"update",
+			"cls",
+			"Install Sublime-ARM-Assembly",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/Documentos/UCM/PVLI/p5/empty-example/index.html",
+		"/D/Documentos/UCM/PVLI/p5/empty-example/sketch.js",
+		"/D/Documentos/UCM/PVLI/PVLI/src/js/main.js",
+		"/D/Documentos/UCM/PVLI/p5/empty-example/Entity.js",
+		"/D/Documentos/UCM/PVLI/PVLI/src/js/Weapon.js",
+		"/D/Documentos/UCM/PVLI/PVLI/src/js/Projectile.js",
+		"/D/Documentos/UCM/PVLI/PVLI/src/js/Player.js",
+		"/D/Documentos/UCM/PVLI/PVLI/src/js/play_scene.js",
+		"/D/Documentos/UCM/PVLI/PVLI/src/js/Asteroid.js",
+		"/D/Documentos/UCM/PVLI/PVLI/.jshintrc.sublime-project",
+		"/C/Users/Usuario-PC/Desktop/game.js",
+		"/C/Users/Usuario-PC/AppData/Roaming/Sublime Text 3/Local/License.sublime_license",
+		"/D/Documentos/UCM/PVLI/p5/empty-example/Asteroid.js",
+		"/D/Documentos/UCM/PVLI/p5/empty-example/Origin.js",
+		"/D/Documentos/UCM/MAR/Ej15MAR/Ej10MAR/Project1/Source.cpp",
+		"/D/Documentos/UCM/TPV/Practica 1/maps/test1.dat",
+		"/D/Documentos/UCM/PVLI/p5.js",
+		"/C/Users/Usuario-PC/AppData/Roaming/Skype/My Skype Received Files/Source(5).cpp",
+		"/D/Documentos/UCM/MAR/helpful_code/ConjuntosDisjuntos.h",
+		"/D/Descargas/Source (1).cpp",
+		"/C/Users/Usuario-PC/AppData/Roaming/Skype/My Skype Received Files/Prueba1.txt",
+		"/C/Users/Usuario-PC/AppData/Roaming/Skype/My Skype Received Files/Source(3).cpp",
+		"/C/Users/Usuario-PC/AppData/Roaming/Skype/My Skype Received Files/Grafo.h",
+		"/C/Users/Usuario-PC/AppData/Roaming/Sublime Text 3/Packages/Visual-Studio/Visual Studio Dark.tmTheme",
+		"/D/Documentos/UCM/PVLI/PVLI/package.json",
+		"/D/Documentos/UCM/MAR/ComponentesConexas.cpp",
+		"/C/Users/Usuario-PC/Desktop/KeyCounter/key_strokes_counter",
+		"/D/Documentos/UCM/Arte/FPS/Instrucciones.txt",
+		"/D/Documentos/dieta.txt",
+		"/D/Documentos/UCM/SO/FicherosP1/Mytar/mytar.h",
+		"/D/Documentos/UCM/SO/FicherosP1/Mytar/mytar_routines.c",
+		"/D/Documentos/UCM/MAR/Amigos.cpp",
+		"/F/OS/FicherosP1/Mytar/mytar_routines.c",
+		"/D/Documentos/UCM/SO/FicherosP1/badsort.c",
+		"/D/Documentos/UCM/TPV/Ejercicios tema 1/Ej_4/Ej_4.cpp",
+		"/D/Documentos/UCM/TPV/Ejercicios tema 1/Ej_2/Ej_2.cpp",
+		"/D/Descargas/Scores",
+		"/D/Documentos/UCM/SIM/Motor_de_partículas.cpp",
+		"/D/Documentos/UCM/MAR/juez/01/01/01/Source_01.cpp",
+		"/D/Documentos/UCM/Segundo curso/TPV/Verano/P5/pr5/README",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/GameOver.h",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/EstadoPG.h",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/EstadoPG.cpp",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/EstadoJuego.h",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/Error.h",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/Error.cpp",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/Boton.h",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/Boton.cpp",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/texturasSDL.h",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/texturasSDL.cpp",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/Premio.cpp",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/texturasError.h",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/texturasError.cpp",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/SDLError.h",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/SDLError.cpp",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/Premio.h",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/PlayPG.cpp",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/PlayPG.h",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/JuegoPG.cpp",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/Pausa.h",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/Pausa.cpp",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/ObjetoPG.h",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/ObjetoPG.cpp",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/ObjetoJuego.h",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/MenuPG.h",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/MenuPG.cpp",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/Mariposa.h",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/Mariposa.cpp",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/main.cpp",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/JuegoPG.h",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/GloboA.cpp",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/GloboA.h",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/Globo.h",
+		"/D/Documentos/UCM/Segundo curso/TPV/Verano/P1/mainHola.cpp",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/Globo.cpp",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Tecnologías de la programación de Videojuegos/Practica_3_hecha/Prueba1/HolaSDL/GameOver.cpp",
+		"/D/Documentos/UCM/Segundo curso/TPV/Verano/P1/BorjaCano/TexturasSDL.cpp",
+		"/D/Documentos/UCM/Segundo curso/TPV/Verano/P1/BorjaCano/JuegoPG.h",
+		"/D/Documentos/UCM/Segundo curso/TPV/Verano/P1/BorjaCano/MainP1.cpp",
+		"/D/Documentos/UCM/Segundo curso/TPV/Verano/P1/BorjaCano/JuegoPG.cpp",
+		"/D/Documentos/UCM/Segundo curso/TPV/Verano/P1/BorjaCano/GlobosPG.cpp",
+		"/D/Documentos/UCM/Segundo curso/TPV/Verano/P1/BorjaCano/GlobosPG.h",
+		"/D/Documentos/UCM/Segundo curso/TPV/Verano/P1/BorjaCano/TexturasSDL.h",
+		"/C/Users/Usuario-PC/Desktop/test.java",
+		"/D/Documentos/Projects/frogger/plantilla-juego/src/js/main.js",
+		"/D/Documentos/Projects/frogger/plantilla-juego/README.md",
+		"/D/Documentos/Projects/frogger_Alicia_JS/index.html",
+		"/D/Documentos/Projects/frogger/plantilla-juego/src/js/play_scene.js",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Lenguajes Interpretados/p/index.js",
+		"/D/Documentos/UCM/Segundo curso/1er cuatri/Lenguajes Interpretados/Practica_3/PVLI_P3/gulpfile.js",
+		"/C/Users/Usuario-PC/Desktop/Serious-Train/README.md",
+		"/D/Documentos/UCM/Segundo curso/DSI/Practica_2/RumbleController/RumbleController.cpp",
+		"/D/Documentos/UCM/Segundo curso/Proyecto_2/Repositorio/Serious-Train/Juego/ProyectosSDL.sln",
+		"/D/Documentos/UCM/Segundo curso/Proyecto_2/Repositorio/Serious-Train/Juego/ProyectosSDL.props",
+		"/C/Users/Usuario-PC/Desktop/Minecraft Server/server.properties",
+		"/D/Documentos/UCM/Segundo curso/Proyecto_2/Repositorio/Serious-Train/Juego/ProyectosSDL.v12.suo",
+		"/D/Documentos/UCM/Segundo curso/DSI/Notas/PosicionRatonFiltro.cpp",
+		"/D/Documentos/UCM/Segundo curso/TPV/Notas/ThreadExample.cpp",
+		"/C/Users/Usuario-PC/Desktop/InitWorkSpace.ahk",
+		"/C/Users/Usuario-PC/Desktop/NotepadScript.ahk",
+		"/D/Documentos/UCM/Segundo curso/Proyecto_2/Repositorio/Serious-Train/Juego/SDL2-2.0.4/docs/README-windows.md",
+		"/C/Users/Public/Desktop/desktop.ini",
+		"/C/Users/Usuario-PC/Desktop/Thumbs.db",
+		"/D/Documentos/UCM/Segundo curso/Proyecto_2/Backup/Bala.cpp",
+		"/D/Documentos/UCM/Segundo curso/IG/Practicas/ProyectosIG-VS13/Hola/main.cpp",
+		"/D/Documentos/UCM/Segundo curso/IG/Practicas/ProyectosIG-VS13/Hola/escena.h",
+		"/D/Documentos/UCM/Segundo curso/IG/Practicas/ProyectosIG-VS13/Hola/escena.cpp",
+		"/D/Documentos/UCM/Segundo curso/IG/Practicas/ProyectosIG-VS13/Hola/Textura.h",
+		"/D/Documentos/UCM/Segundo curso/IG/Practicas/ProyectosIG-VS13/Hola/Textura.cpp",
+		"/D/Documentos/UCM/Segundo curso/IG/Practicas/ProyectosIG-VS13/Hola/tipos.h",
+		"/D/Documentos/UCM/Segundo curso/IG/Practicas/ProyectosIG-VS13/Hola/tipos.cpp",
+		"/C/Users/Usuario-PC/Desktop/temp/RaizObjeto.h",
+		"/C/Users/Usuario-PC/Desktop/temp/sugerencias.txt",
+		"/C/Users/Usuario-PC/Desktop/temp/personaje.h",
+		"/C/Users/Usuario-PC/Desktop/temp/personaje.cpp",
+		"/C/Users/Usuario-PC/Desktop/temp/Objeto.h",
+		"/C/Users/Usuario-PC/Desktop/temp/Objeto.cpp",
+		"/D/Documentos/Juegos/Teaching Feeling-1.8.2 Español por Mariano Abadie/tyrano/libs/textillate/assets/animate.css",
+		"/C/Users/Usuario-PC/Desktop/processing-3.2.3/lib/p5-zip/p5.js",
+		"/D/Documentos/UCM/Segundo curso/IG/MallaTri.h",
+		"/D/Documentos/UCM/Segundo curso/Proyecto_2/Repositorio/.gitignore",
+		"/D/Documentos/UCM/Segundo curso/Proyecto_2/Documentación/README.md",
+		"/D/Documentos/UCM/Segundo curso/Estructura de Datos y Algoritmos/viajante.txt",
+		"/D/Documentos/UCM/Segundo curso/Estructura de Datos y Algoritmos/Juez/juez_43/juez_43/juez_version.cpp",
+		"/C/Users/Usuario-PC/Desktop/Practica2_a.txt",
+		"/C/Users/Usuario-PC/Desktop/Practica2_b.txt",
+		"/D/Documentos/UCM/Segundo curso/Estructura de Datos y Algoritmos/Parcial4/Main.cpp",
+		"/D/Documentos/UCM/Segundo curso/Estructura de Datos y Algoritmos/Ejercicios/recursion/recursion/Source.cpp"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Asteroid",
+			"asteroids"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Entity",
+			"entitys"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/C++/C++ Single File.sublime-build",
+	"project": ".jshintrc.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 108.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
