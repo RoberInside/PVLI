@@ -22,7 +22,7 @@ var PlayScene = {
   update: function () {
    this.ship.move(this.input.mousePointer.x, this.input.mousePointer.y);
    this.enemies.forEach((e)=> e.update());
-   console.log(this.bullets.lenght);
+  // for (let b of this.bullets) b.showPos();
   }
 };
 
