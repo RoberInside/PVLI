@@ -1,7 +1,7 @@
 'use strict';
 var Player = require('./Player.js');
 var Enemy = require('./Enemy.js');
-
+var bg;
 
 
 const MAX_ENEMIES = 50;
@@ -10,16 +10,15 @@ var PlayScene = {
   create: function () {
    //Provisional Background. TODO: make the BG an animation
     this.bullets = []
-    this.bg = this.game.add.sprite(
-      this.game.world.centerX, this.game.world.centerY, 'bg'
-    );
-  this.bg.anchor.setTo(0.5, 0.5);
+    bg = this.game.add.tileSprite(0, 0, 800, 600,'bg');
    //Enable Physics engine
   this.game.physics.startSystem(Phaser.Physics.ARCADE);
   initObjects(this);
   },
 
   update: function () {
+    //background scroll speed every 4s
+   bg.tilePosition.y += window.innerHeight * this.game.time.elapsedMS / 1000 * 0.25; 
    this.ship.move(this.input.mousePointer.x, this.input.mousePointer.y);
    this.enemies.forEach((e)=> e.update());
   // for (let b of this.bullets) b.showPos();
@@ -40,8 +39,14 @@ function initObjects(playScene){
    	enemies.add(new Enemy(playScene));
    }
    */
-   playScene.enemies.add(new Enemy(playScene, playScene.game, window.innerWidth/2, 0));
+   playScene.enemies.add(new Enemy(playScene, playScene.game, 50, 100));
 
+    playScene.enemies.forEach(
+    function (e){
+      e.anchor.setTo(0.5, 0.5);
+    }
+
+  )
 }
 
 function initPhysics(state) {
@@ -49,3 +54,4 @@ function initPhysics(state) {
 
 
 }
+

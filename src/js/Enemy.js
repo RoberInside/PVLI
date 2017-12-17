@@ -13,7 +13,24 @@ var Enemy = function(state, game, x, y){
 Enemy.prototype = Object.create (Phaser.Sprite.prototype);
 Enemy.prototype.constructor = Enemy;
 
-Enemy.prototype.move = function() {};
+Enemy.prototype.move = function() {
+
+	if(this.x < window.innerWidth - 50 && this.y < 100){
+		this.body.velocity.setTo(200, 0);
+	}else if(this.x >= window.innerWidth -100 && this.y < window.innerHeight-75){
+		this.body.velocity.setTo(0, 200);
+	}else if(this.x >= window.innerWidth-100 && this.y >= window.innerHeight-75){
+		this.body.velocity.setTo(-200, 0);
+	}
+	else if(this.x <= 50 && this.y >= 50){
+		this.body.velocity.setTo(0, -200);
+	}
+
+
+
+
+
+};
 
 Enemy.prototype.kill = function() {
 	//TODO
