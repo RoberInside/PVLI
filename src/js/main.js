@@ -2,13 +2,20 @@
 
 var PlayScene = require('./play_scene.js');
 
+/////////////////
+var unique = require('uniq');
+
+var data = [1, 2, 2, 3, 4, 5, 5, 5, 6];
+
+console.log(unique(data));
+/////////////////
 
 var BootScene = {
   preload: function () {
 
     //Web page
-   // this.game.load.baseURL = 'https://borjacano97.github.io/SeriousWagon/src/';
-    //this.game.load.crossOrigin = 'anonymous';
+    this.game.load.baseURL = 'https://RoberInside.github.io/SeriousWagon/src/';
+    this.game.load.crossOrigin = 'anonymous';
 
     // load here assets required for the loading screen
      this.game.load.image('button', 'images/button.png');
