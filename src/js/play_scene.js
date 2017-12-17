@@ -21,11 +21,9 @@ var PlayScene = {
    bg.tilePosition.y += window.innerHeight * this.game.time.elapsedMS / 1000 * 0.25; 
    this.ship.move(this.input.mousePointer.x, this.input.mousePointer.y);
    this.enemies.forEach((e)=> e.update());
-<<<<<<< HEAD
-   for (var b of this.bullets) b.showPosition();
-=======
+
   // for (let b of this.bullets) b.showPos();
->>>>>>> Enem_Fondo
+
   }
 };
 

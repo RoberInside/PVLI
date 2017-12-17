@@ -41,10 +41,10 @@ Enemy.prototype.update = function () {
 };
 Enemy.prototype.shoot = function () {
 	if (!this.hasShot){
-<<<<<<< HEAD
+
 		this.state.bullets.push(new Projectile(this.state, this.game, this.x, this.y, -5, 0));
 		this.hasShot = true;
-=======
+
 	let scope = inRadians(90);
 	let initialAngle = (Math.PI - scope) /2;
 	let finalAngle = initialAngle + scope;
@@ -57,7 +57,7 @@ Enemy.prototype.shoot = function () {
 			this.createBullet(vx, vy);
 		}
 	this.hasShot = true;
->>>>>>> Enem_Fondo
+
 	}
 }
 

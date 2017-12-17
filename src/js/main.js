@@ -7,8 +7,8 @@ var BootScene = {
   preload: function () {
 
     //Web page
-    this.game.load.baseURL = 'https://borjacano97.github.io/SeriousWagon/src/';
-    this.game.load.crossOrigin = 'anonymous';
+   // this.game.load.baseURL = 'https://borjacano97.github.io/SeriousWagon/src/';
+    //this.game.load.crossOrigin = 'anonymous';
 
     // load here assets required for the loading screen
      this.game.load.image('button', 'images/button.png');
