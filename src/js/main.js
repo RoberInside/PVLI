@@ -14,7 +14,7 @@ var BootScene = {
   preload: function () {
 
     //Web page
-    this.game.load.baseURL = 'https://RoberInside.github.io/SeriousWagon/src/';
+    this.game.load.baseURL = 'https://roberinside.github.io/SeriousWagon/src/';
     this.game.load.crossOrigin = 'anonymous';
 
     // load here assets required for the loading screen
