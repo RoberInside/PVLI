@@ -14,6 +14,7 @@ var PlayScene = {
    //Enable Physics engine
   this.game.physics.startSystem(Phaser.Physics.ARCADE);
   initObjects(this);
+  this.timer = new Phaser.Timer(this.game, false);
   },
 
   update: function () {
