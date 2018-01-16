@@ -64,7 +64,7 @@ var Pattern = function (enemy, type, cadency, nProjectiles, scope, vel) {
   this.tick = function(type){
     if (type !== this.type)
       this.changePatternTo(type);
-  this.patterns[enum(this.type)]();
+  this.patterns[myEnum(this.type)]();
   };
 };
 
@@ -72,7 +72,7 @@ function inRadians(degrees) {
   return (degrees*Math.PI/180);
 }
 
-function enum(string) {
+function myEnum(string) {
   var index
   switch (string) {
     case 'Wave':    index = 0; break;

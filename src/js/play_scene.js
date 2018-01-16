@@ -19,7 +19,7 @@ var PlayScene = {
 
   update: function () {
     //background scroll speed every 4s
-   bg.tilePosition.y += window.innerHeight * this.game.time.elapsedMS / 1000 * 0.25; 
+   bg.tilePosition.y += window.innerHeight * this.game.time.elapsedMS / 1000 * 0.25;
    this.ship.move(this.input.mousePointer.x, this.input.mousePointer.y);
    this.enemies.forEach((e)=> e.update());
 
@@ -41,7 +41,12 @@ function initObjects(playScene){
    	enemies.add(new Enemy(playScene));
    }
    */
-   playScene.enemies.add(new Enemy(playScene, playScene.game, 50, 100));
+   playScene.enemies.add(
+     new Enemy(
+       playScene, playScene.game, 50, 100, 200, 0, 100, 'enemy', 30,
+       1000, 'shoot', 'Wave', 90, 5, 50
+     )
+   );
 
     playScene.enemies.forEach(
     function (e){
@@ -56,4 +61,3 @@ function initPhysics(state) {
 
 
 }
-
