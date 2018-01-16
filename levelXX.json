@@ -6,11 +6,10 @@
         {
           "posX":0,
           "posY":0,
-          "velY":0,
           "VelX":0,
           "VelY":0,
           "life":0,
-          "sprite":"",
+          "sprite":"enemy",
           "damag":0,
           "coolDown":0,
           "bulletSprite":"",
@@ -21,6 +20,8 @@
             "nProj":0
             }
           }
+        ]
+    }
         ]
     }
   ]
