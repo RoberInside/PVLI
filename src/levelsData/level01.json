@@ -9,7 +9,7 @@
           "posY":0,
           "VelX":50,
           "VelY":0,
-          "life":20,
+          "life":60,
           "sprite":"enemy",
           "damag":100,
           "coolDown":1000,
@@ -27,7 +27,7 @@
           "posY":0,
           "VelX":60,
           "VelY":0,
-          "life":20,
+          "life":60,
           "sprite":"enemy",
           "damag":100,
           "coolDown":1000,
@@ -39,10 +39,9 @@
             "nProj":1
             }
           }          
-        ]
-
-    }
-  ],
+        ]//enemies
+    }//time
+  ],//instant
 
   "instants":[
   {
@@ -54,7 +53,7 @@
           "posY":0,
           "VelX":50,
           "VelY":0,
-          "life":20,
+          "life":60,
           "sprite":"enemy",
           "damag":100,
           "coolDown":1000,
@@ -72,7 +71,7 @@
           "posY":0,
           "VelX":50,
           "VelY":0,
-          "life":20,
+          "life":60,
           "sprite":"enemy",
           "damag":100,
           "coolDown":1000,
@@ -90,7 +89,7 @@
           "posY":0,
           "VelX":50,
           "VelY":0,
-          "life":20,
+          "life":60,
           "sprite":"enemy",
           "damag":100,
           "coolDown":1000,
@@ -108,7 +107,7 @@
           "posY":300,
           "VelX":-50,
           "VelY":10,
-          "life":20,
+          "life":60,
           "sprite":"enemy",
           "damag":100,
           "coolDown":1000,
@@ -126,7 +125,7 @@
           "posY":300,
           "VelX":-50,
           "VelY":10,
-          "life":20,
+          "life":60,
           "sprite":"enemy",
           "damag":100,
           "coolDown":1000,
@@ -138,9 +137,9 @@
             "nProj":1
           }
       }
-    ]
-  }
-  ],
+     ]//enemies
+    }//time
+  ],//instant
 
   "instants":[
   {
@@ -152,7 +151,7 @@
           "posY":-20,
           "VelX":0,
           "VelY":-50,
-          "life":20,
+          "life":60,
           "sprite":"enemy",
           "damag":100,
           "coolDown":1000,
@@ -170,7 +169,7 @@
           "posY":-20,
           "VelX":0,
           "VelY":-50,
-          "life":20,
+          "life":60,
           "sprite":"enemy",
           "damag":100,
           "coolDown":1000,
@@ -188,7 +187,7 @@
           "posY":-20,
           "VelX":0,
           "VelY":-50,
-          "life":20,
+          "life":60,
           "sprite":"enemy",
           "damag":100,
           "coolDown":1000,
@@ -206,7 +205,7 @@
           "posY":-20,
           "VelX":0,
           "VelY":-50,
-          "life":20,
+          "life":60,
           "sprite":"enemy",
           "damag":100,
           "coolDown":1000,
@@ -218,9 +217,9 @@
             "nProj":1
           }
       }
-      ]
-    }
-    ],
+      ]//enemies
+    }//time
+  ],//instant
     "instants":[
   {
     "time": 7000,
@@ -233,7 +232,7 @@
           "VelY":0,
           "life":500,
           "sprite":"Boss1",
-          "damag":100,
+          "damag":250,
           "coolDown":500,
           "bulletSprite":"shoot",
           "patron":
@@ -243,7 +242,7 @@
             "nProj":3
           }
       }
-      ]
-    }
-    ]
+      ]//enemies
+    }//time
+  ]//instant
 }//fin nivel

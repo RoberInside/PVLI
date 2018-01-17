@@ -16,13 +16,12 @@
           "patron":
           {
             "tipo":"",
-            "scope":0.0,
+            "scope":90.0,
             "nProj":0
             }
           }
-        ]
-    }
-        ]
-    }
-  ]
+        ]//enemies
+    }//time
+  ]//instant
 }
+  
