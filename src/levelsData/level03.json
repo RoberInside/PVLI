@@ -5,12 +5,12 @@
       [
       //enemigo 3
         {
-          "posX":0,
-          "posY":0,
-          "VelX":0,
-          "VelY":0,
-          "life":100,
-          "sprite":"enemy",
+          "posX":-60,
+          "posY":-60,
+          "VelX":20,
+          "VelY":20,
+          "life":200,
+          "sprite":"enemy3",
           "damag":150,
           "coolDown":1250,
           "bulletSprite":"shoot",
@@ -23,12 +23,12 @@
           },
           //enemigo 3
         {
-          "posX":0,
-          "posY":0,
-          "VelX":0,
-          "VelY":0,
-          "life":100,
-          "sprite":"enemy",
+          "posX":860,
+          "posY":-60,
+          "VelX":-20,
+          "VelY":20,
+          "life":200,
+          "sprite":"enemy3",
           "damag":150,
           "coolDown":1250,
           "bulletSprite":"shoot",
@@ -44,17 +44,17 @@
   ],//instant
   "instants":[
   {
-    "time":4000,
+    "time":3500,
     "enemies":
       [
         {
           //enemigo 3
-          "posX":0,
-          "posY":0,
+          "posX":400,
+          "posY":-50,
           "VelX":0,
-          "VelY":0,
-          "life":100,
-          "sprite":"enemy",
+          "VelY":-10,
+          "life":200,
+          "sprite":"enemy3",
           "damag":150,
           "coolDown":1250,
           "bulletSprite":"shoot",
@@ -67,12 +67,12 @@
           },
             //enemigo 2
         {
-          "posX":400,
-          "posY":-60,
+          "posX":300,
+          "posY":-100,
           "VelX":0,
-          "VelY":30,
+          "VelY":-20,
           "life":20,
-          "sprite":"enemy",
+          "sprite":"enemy2",
           "damag":50,
           "coolDown":750,
           "bulletSprite":"shoot",
@@ -85,12 +85,12 @@
           },
             //enemigo 2
         {
-          "posX":400,
-          "posY":-60,
+          "posX":500,
+          "posY":-100,
           "VelX":0,
-          "VelY":30,
+          "VelY":-20,
           "life":20,
-          "sprite":"enemy",
+          "sprite":"enemy2",
           "damag":50,
           "coolDown":750,
           "bulletSprite":"shoot",
@@ -102,13 +102,13 @@
             }
           },
            //enemigo 1
-       {
-          "posX":460,
-          "posY":-20,
+        {
+          "posX":400,
+          "posY":-200,
           "VelX":0,
-          "VelY":-50,
+          "VelY":-30,
           "life":60,
-          "sprite":"enemy",
+          "sprite":"enemy1",
           "damag":100,
           "coolDown":1000,
           "bulletSprite":"shoot",
@@ -124,11 +124,197 @@
   ],//instant
   "instants":[
   {
-    "time":6000,
+    "time":1000,
     "enemies":
       [
-
-      
+           //enemigo 1
+        {
+          "posX":400,
+          "posY":-60,
+          "VelX":0,
+          "VelY":-30,
+          "life":60,
+          "sprite":"enemy1",
+          "damag":100,
+          "coolDown":1000,
+          "bulletSprite":"shoot",
+          "patron":
+          {
+            "tipo":"wave",
+            "scope":90.0,
+            "nProj":1
+            }
+          },
+          //enemigo 1
+        {
+          "posX":860,
+          "posY":-60,
+          "VelX":-30,
+          "VelY":30,
+          "life":60,
+          "sprite":"enemy1",
+          "damag":100,
+          "coolDown":1000,
+          "bulletSprite":"shoot",
+          "patron":
+          {
+            "tipo":"wave",
+            "scope":90.0,
+            "nProj":1
+            }
+          },
+          //enemigo 1
+        {
+          "posX":-60,
+          "posY":-60,
+          "VelX":30,
+          "VelY":30,
+          "life":60,
+          "sprite":"enemy1",
+          "damag":100,
+          "coolDown":1000,
+          "bulletSprite":"shoot",
+          "patron":
+          {
+            "tipo":"wave",
+            "scope":90.0,
+            "nProj":1
+            }
+          }      
+       ]//enemies
+    }//time
+  ],//instant
+  "instants":[
+  {
+    "time":2000,
+    "enemies":
+      [
+        {
+          //enemigo 3
+          "posX":200,
+          "posY":-60,
+          "VelX":0,
+          "VelY":20,
+          "life":200,
+          "sprite":"enemy3",
+          "damag":150,
+          "coolDown":1250,
+          "bulletSprite":"shoot",
+          "patron":
+          {
+            "tipo":"",
+            "scope":45.0,
+            "nProj":2
+            }
+          },
+          {
+          //enemigo 3
+          "posX":600,
+          "posY":-60,
+          "VelX":0,
+          "VelY":20,
+          "life":200,
+          "sprite":"enemy3",
+          "damag":150,
+          "coolDown":1250,
+          "bulletSprite":"shoot",
+          "patron":
+          {
+            "tipo":"",
+            "scope":45.0,
+            "nProj":2
+            }
+          },
+          //enemigo 2
+        {
+          "posX":-60,
+          "posY":60,
+          "VelX":5,
+          "VelY":0,
+          "life":20,
+          "sprite":"enemy2",
+          "damag":50,
+          "coolDown":750,
+          "bulletSprite":"shoot",
+          "patron":
+          {
+            "tipo":"wave",
+            "scope":110.0,
+            "nProj": 3
+            }
+          },
+              //enemigo 2
+        {
+          "posX":860,
+          "posY":60,
+          "VelX":-15,
+          "VelY":0,
+          "life":20,
+          "sprite":"enemy2",
+          "damag":50,
+          "coolDown":750,
+          "bulletSprite":"shoot",
+          "patron":
+          {
+            "tipo":"wave",
+            "scope":110.0,
+            "nProj": 3
+            }
+          },
+            //enemigo 1
+        {
+          "posX":460,
+          "posY":-100,
+          "VelX":0,
+          "VelY":50,
+          "life":60,
+          "sprite":"enemy1",
+          "damag":100,
+          "coolDown":1000,
+          "bulletSprite":"shoot",
+          "patron":
+          {
+            "tipo":"wave",
+            "scope":90.0,
+            "nProj":1
+            }
+          },      
+          //enemigo 3
+        {
+          "posX":-60,
+          "posY":60,
+          "VelX":15,
+          "VelY":0,
+          "life":200,
+          "sprite":"enemy3",
+          "damag":150,
+          "coolDown":1250,
+          "bulletSprite":"shoot",
+          "patron":
+          {
+            "tipo":"",
+            "scope":45.0,
+            "nProj":2
+            }
+          },      
+            //enemigo 1
+        {
+          "posX":860,
+          "posY":60,
+          "VelX":-15,
+          "VelY":0,
+          "life":60,
+          "sprite":"enemy1",
+          "damag":100,
+          "coolDown":1000,
+          "bulletSprite":"shoot",
+          "patron":
+          {
+            "tipo":"wave",
+            "scope":90.0,
+            "nProj":1
+            }
+          }      
        ]//enemies
     }//time
   ],//instant
@@ -138,20 +324,97 @@
     "enemies":
       [
       //Boss 3
-
-      
+        {
+          "posX":400,
+          "posY":-20,
+          "VelX":0,
+          "VelY":-50,
+          "life":1750,
+          "sprite":"Boss3",
+          "damag":150,
+          "coolDown":1000,
+          "bulletSprite":"shoot",
+          "patron":
+          {
+            "tipo":"wave",
+            "scope":100.0,
+            "nProj":4
+            }
+          },
+            //enemigo 1
+        {
+          "posX":470,
+          "posY":-100,
+          "VelX":0,
+          "VelY":5,
+          "life":60,
+          "sprite":"enemy",
+          "damag":100,
+          "coolDown":1000,
+          "bulletSprite":"shoot",
+          "patron":
+          {
+            "tipo":"wave",
+            "scope":90.0,
+            "nProj":1
+            }
+          },      
+            //enemigo 1
+        {
+          "posX":330,
+          "posY":-100,
+          "VelX":0,
+          "VelY":5,
+          "life":60,
+          "sprite":"enemy",
+          "damag":100,
+          "coolDown":1000,
+          "bulletSprite":"shoot",
+          "patron":
+          {
+            "tipo":"wave",
+            "scope":90.0,
+            "nProj":1
+            }
+          },           
+            //enemigo 1
+        {
+          "posX":-60,
+          "posY":60,
+          "VelX":10,
+          "VelY":0,
+          "life":60,
+          "sprite":"enemy",
+          "damag":100,
+          "coolDown":1000,
+          "bulletSprite":"shoot",
+          "patron":
+          {
+            "tipo":"wave",
+            "scope":90.0,
+            "nProj":1
+            }
+          },      
+            //enemigo 1
+        {
+          "posX":860,
+          "posY":60,
+          "VelX":-10,
+          "VelY":0,
+          "life":60,
+          "sprite":"enemy",
+          "damag":100,
+          "coolDown":1000,
+          "bulletSprite":"shoot",
+          "patron":
+          {
+            "tipo":"wave",
+            "scope":90.0,
+            "nProj":1
+            }
+          }      
        ]//enemies
     }//time
-  ],//instant
-  "instants":[
-  {
-    "time":5000,
-    "enemies":
-      [
-
-      
-       ]//enemies
-    }//time
-  ],//instant
+  ]//instant
 }
   
