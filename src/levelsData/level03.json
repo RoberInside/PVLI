@@ -13,7 +13,7 @@
           "sprite":"enemy3",
           "damag":150,
           "coolDown":1250,
-          "bulletSprite":"shoot",
+          "bulletSprite":"enemy_shoot",
           "patron":
           {
             "tipo":"",
@@ -31,7 +31,7 @@
           "sprite":"enemy3",
           "damag":150,
           "coolDown":1250,
-          "bulletSprite":"shoot",
+          "bulletSprite":"enemy_shoot",
           "patron":
           {
             "tipo":"",
@@ -57,7 +57,7 @@
           "sprite":"enemy3",
           "damag":150,
           "coolDown":1250,
-          "bulletSprite":"shoot",
+          "bulletSprite":"enemy_shoot",
           "patron":
           {
             "tipo":"",
@@ -75,7 +75,7 @@
           "sprite":"enemy2",
           "damag":50,
           "coolDown":750,
-          "bulletSprite":"shoot",
+          "bulletSprite":"enemy_shoot",
           "patron":
           {
             "tipo":"wave",
@@ -93,7 +93,7 @@
           "sprite":"enemy2",
           "damag":50,
           "coolDown":750,
-          "bulletSprite":"shoot",
+          "bulletSprite":"enemy_shoot",
           "patron":
           {
             "tipo":"wave",
@@ -111,7 +111,7 @@
           "sprite":"enemy1",
           "damag":100,
           "coolDown":1000,
-          "bulletSprite":"shoot",
+          "bulletSprite":"enemy_shoot",
           "patron":
           {
             "tipo":"wave",
@@ -137,7 +137,7 @@
           "sprite":"enemy1",
           "damag":100,
           "coolDown":1000,
-          "bulletSprite":"shoot",
+          "bulletSprite":"enemy_shoot",
           "patron":
           {
             "tipo":"wave",
@@ -155,7 +155,7 @@
           "sprite":"enemy1",
           "damag":100,
           "coolDown":1000,
-          "bulletSprite":"shoot",
+          "bulletSprite":"enemy_shoot",
           "patron":
           {
             "tipo":"wave",
@@ -173,7 +173,7 @@
           "sprite":"enemy1",
           "damag":100,
           "coolDown":1000,
-          "bulletSprite":"shoot",
+          "bulletSprite":"enemy_shoot",
           "patron":
           {
             "tipo":"wave",
@@ -199,7 +199,7 @@
           "sprite":"enemy3",
           "damag":150,
           "coolDown":1250,
-          "bulletSprite":"shoot",
+          "bulletSprite":"enemy_shoot",
           "patron":
           {
             "tipo":"",
@@ -217,7 +217,7 @@
           "sprite":"enemy3",
           "damag":150,
           "coolDown":1250,
-          "bulletSprite":"shoot",
+          "bulletSprite":"enemy_shoot",
           "patron":
           {
             "tipo":"",
@@ -235,7 +235,7 @@
           "sprite":"enemy2",
           "damag":50,
           "coolDown":750,
-          "bulletSprite":"shoot",
+          "bulletSprite":"enemy_shoot",
           "patron":
           {
             "tipo":"wave",
@@ -253,7 +253,7 @@
           "sprite":"enemy2",
           "damag":50,
           "coolDown":750,
-          "bulletSprite":"shoot",
+          "bulletSprite":"enemy_shoot",
           "patron":
           {
             "tipo":"wave",
@@ -271,7 +271,7 @@
           "sprite":"enemy1",
           "damag":100,
           "coolDown":1000,
-          "bulletSprite":"shoot",
+          "bulletSprite":"enemy_shoot",
           "patron":
           {
             "tipo":"wave",
@@ -289,7 +289,7 @@
           "sprite":"enemy3",
           "damag":150,
           "coolDown":1250,
-          "bulletSprite":"shoot",
+          "bulletSprite":"enemy_shoot",
           "patron":
           {
             "tipo":"",
@@ -307,7 +307,7 @@
           "sprite":"enemy1",
           "damag":100,
           "coolDown":1000,
-          "bulletSprite":"shoot",
+          "bulletSprite":"enemy_shoot",
           "patron":
           {
             "tipo":"wave",
@@ -333,7 +333,7 @@
           "sprite":"Boss3",
           "damag":150,
           "coolDown":1000,
-          "bulletSprite":"shoot",
+          "bulletSprite":"Boss3_shoot",
           "patron":
           {
             "tipo":"wave",
@@ -351,7 +351,7 @@
           "sprite":"enemy",
           "damag":100,
           "coolDown":1000,
-          "bulletSprite":"shoot",
+          "bulletSprite":"enemy_shoot",
           "patron":
           {
             "tipo":"wave",
@@ -369,7 +369,7 @@
           "sprite":"enemy",
           "damag":100,
           "coolDown":1000,
-          "bulletSprite":"shoot",
+          "bulletSprite":"enemy_shoot",
           "patron":
           {
             "tipo":"wave",
@@ -387,7 +387,7 @@
           "sprite":"enemy",
           "damag":100,
           "coolDown":1000,
-          "bulletSprite":"shoot",
+          "bulletSprite":"enemy_shoot",
           "patron":
           {
             "tipo":"wave",
@@ -405,7 +405,7 @@
           "sprite":"enemy",
           "damag":100,
           "coolDown":1000,
-          "bulletSprite":"shoot",
+          "bulletSprite":"enemy_shoot",
           "patron":
           {
             "tipo":"wave",
