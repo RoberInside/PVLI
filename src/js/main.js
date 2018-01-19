@@ -36,15 +36,18 @@ var PreloaderScene = {
 
     // TODO: load here the assets for the game
     this.game.load.image('bg', 'images/background.png');
-    this.game.load.image('ship', 'images/ship.png');
+    this.game.load.image('player', 'images/Player.png');
     this.game.load.image('enemy', 'images/enemy.png');
-    this.game.load.image('shoot', 'images/shoot.png');
+    this.game.load.image('enemyShoot', 'images/enemy_shoot.png');
+    this.game.load.image('playerShoot', 'images/player_shoot.png');
+    this.game.load.audio('menuMusic', 'sounds/menu.mp3')
+    this.game.load.audio('shootSound', 'sounds/shoot-00.wav');
+    this.game.load.audio('hitSound', 'sounds/hit-3.wav');
+    
   },
 
   create: function () {
     this.game.state.start('play');
-
-    console.log('gig');
   }
 };
 
@@ -53,13 +56,13 @@ var PreloaderScene = {
     this.game.load.image('button', 'images/button.png');
 
   },
- 
+
   create: function(){
-    
+
 //this.game.state.start('pause');
     var key = game.input.keyboard.addKey(Phaser.keyboard.ESC);
     key.onDown.add(pauseMenu, this);
-    
+
   },
 
   pauseMenu: function() {
@@ -68,7 +71,7 @@ var PreloaderScene = {
      actionOnClick, this, 2, 1, 0);
   },
   actionOnClick: function() {
-    
+
     button != button;
 
   },
@@ -77,7 +80,7 @@ var MenuScene = {
 preload: function(){
 
   this.game.load.image('preloader_bar', 'images/preloader_bar.png');
- 
+
 
  this.menuBg = this.game.add.sprite(
       this.game.world.centerX, this.game.world.centerY, 'menuBg'
@@ -92,8 +95,8 @@ start: function(){
 
 create: function(){
 
-    var button = this.game.add.button(this.game.world.centerX - 150, 
-      this.game.world.centerY, 'button',this.start, this, 0, 0, 0);    
+    var button = this.game.add.button(this.game.world.centerX - 150,
+      this.game.world.centerY, 'button',this.start, this, 0, 0, 0);
 
 },
 
