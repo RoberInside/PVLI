@@ -7,7 +7,6 @@ var Pattern = function (enemy, type, cadency, nProjectiles, scope, vel) {
   this.nProjectiles = nProjectiles;
   this.scope = inRadians(scope);
   this.type = type;
-  this.vel = vel;
   this.patterns = {};
   this.tick = function(){
   	this.patterns[this.type](this);
@@ -20,9 +19,9 @@ var Pattern = function (enemy, type, cadency, nProjectiles, scope, vel) {
     let finalAngle = initialAngle + self.scope;
     let incr = self.scope/self.nProjectiles;
     for (var i = initialAngle; i < finalAngle; i+= incr) {
-      var vx = Math.cos(i);
-      var vy = Math.sin(i);
-      enemy.createBullet(vx*self.vel, vy*self.vel);
+      var dx = Math.cos(i);
+      var dy = Math.sin(i);
+      enemy.createBullet(dx, dy);
     }
   };
   //SPRING PATTERN
@@ -31,10 +30,10 @@ var Pattern = function (enemy, type, cadency, nProjectiles, scope, vel) {
     self.finalAngle = initialAngle + scope;
     self.incr = scope/self.nProjectiles;
     self.theta > self.finalAngle ? self.theta -= self.incr : self.theta += self.incr;
-    let vx = Math.cos(self.theta);
-    let vy = Math.sin(self.theta);
+    let dx = Math.cos(self.theta);
+    let dy = Math.sin(self.theta);
 
-    enemy.createBullet(vx*self.vel, vy*self.vel);
+    enemy.createBullet(dx, dy);
 
   };
   this.changePatternTo = function (newType) {
