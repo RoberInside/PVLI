@@ -61,10 +61,8 @@ var Pattern = function (enemy, type, cadency, nProjectiles, scope, vel) {
      }
      this.type = newType;
   }
-  this.tick = function(type){
-    if (type !== this.type)
-      this.changePatternTo(type);
-  this.patterns[this.type]();
+  this.tick = function(){
+  	this.patterns[this.type]();
   };
 };
 
