@@ -43,7 +43,7 @@ function initObjects(playScene){
    */
    playScene.enemies.add(
      new Enemy(
-       playScene, playScene.game, 50, 100, 200, 0, 100, 'enemy', 30,
+       playScene, playScene.game, 50, 100, 0, 0, 100, 'enemy', 30,
        1000, 'shoot', 'Wave', 90, 5, 50
      )
    );

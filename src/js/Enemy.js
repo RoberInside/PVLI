@@ -33,6 +33,7 @@ Enemy.prototype.damage = function (dmg) {
 };
 
 Enemy.prototype.createBullet = function (vx ,vy) {
+	console.log("Create Bullet with " + vx +", " + vy+ " velocity");
 	let bullet = new Projectile(this.state, this.game, this.x, this.y, vx, vy);
 	this.game.add.existing(bullet);
 	this.state.bullets.push(bullet);

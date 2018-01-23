@@ -1,34 +1,40 @@
+function inRadians(degrees) {
+  return (degrees*Math.PI/180);
+}
 
 var Pattern = function (enemy, type, cadency, nProjectiles, scope, vel) {
   this.enemy = enemy;
   this.nProjectiles = nProjectiles;
-  this.scope = scope;
+  this.scope = inRadians(scope);
   this.type = type;
   this.vel = vel;
-  this.patterns = [];
+  this.patterns = {};
+  this.tick = function(){
+  	this.patterns[this.type](this);
+  };
   enemy.game.time.events.loop(cadency, this.tick, this);
 
   //WAVE PATTERN
-  this.patterns.Wave = function() {
-    let initialAngle = (Math.PI - scope) /2;
-    let finalAngle = initialAngle + scope;
-    let incr = scope/this.nProjectiles;
+  this.patterns.Wave = function(self) {
+    let initialAngle = (Math.PI - self.scope) /2;
+    let finalAngle = initialAngle + self.scope;
+    let incr = self.scope/self.nProjectiles;
     for (var i = initialAngle; i < finalAngle; i+= incr) {
       var vx = Math.cos(i);
       var vy = Math.sin(i);
-      enemy.createBullet(vx*this.vel, vy*this.vel);
+      enemy.createBullet(vx*self.vel, vy*self.vel);
     }
   };
   //SPRING PATTERN
-  this.patterns.Spring = function () {
-    this.initialAngle = (Math.PI - scope)/2;
-    this.finalAngle = initialAngle + scope;
-    this.incr = scope/this.nProjectiles;
-    this.theta > this.finalAngle ? this.theta -= this.incr : this.theta += this.incr;
-    let vx = Math.cos(this.theta);
-    let vy = Math.sin(this.theta);
+  this.patterns.Spring = function (self) {
+    self.initialAngle = (Math.PI - scope)/2;
+    self.finalAngle = initialAngle + scope;
+    self.incr = scope/self.nProjectiles;
+    self.theta > self.finalAngle ? self.theta -= self.incr : self.theta += self.incr;
+    let vx = Math.cos(self.theta);
+    let vy = Math.sin(self.theta);
 
-    enemy.createBullet(vx*this.vel, vy*this.vel);
+    enemy.createBullet(vx*self.vel, vy*self.vel);
 
   };
   this.changePatternTo = function (newType) {
@@ -61,14 +67,8 @@ var Pattern = function (enemy, type, cadency, nProjectiles, scope, vel) {
      }
      this.type = newType;
   }
-  this.tick = function(){
-  	this.patterns[this.type]();
-  };
 };
 
-function inRadians(degrees) {
-  return (degrees*Math.PI/180);
-}
 
 
 module.exports = Pattern;
