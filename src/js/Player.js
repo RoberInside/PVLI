@@ -15,9 +15,6 @@ Player.prototype.move = function (x, y) {
 	this.x = x;
 	this.y = y;
 };
-Player.prototype.shot = function() {
-	this.weapon.shoot();
-};
 Player.prototype.kill = function() {
 	// TODO
 };
@@ -25,9 +22,6 @@ Player.prototype.damage = function (dmg) {
 	this.health -= dmg;
 	if (this.health <= 0)
 		this.kill();
-};
-Player.prototype.swapWaepon = function(newWeapon) {
-	this.weapon = new weapon(newWeapons);
 };
 Player.prototype.setPhysics = function () {
 	//this.body.collideWorldBounds = true;
