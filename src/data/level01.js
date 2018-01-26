@@ -7,244 +7,259 @@ function minutes(n){
 }
 
 //time is in ms by default you can use the auxiliar functions above to make ir more easy to read an write
-module.exports = [
+module.exports = [//LEVEL01
 
-{
-    time:2000,
-    enemies:
+  {
+     time :2000,
+     enemies :
       [
       //enemigo 1
         {
-          posX:300,
-          posY:-60,
-          velX:0,
-          velY:10,
-          life:60,
-          sprite:'enemy1',
-          damage:100,
-          coolDown:1000,
-          bulletSprite:'enemy_shoot',
-          pattern:
+           posX :300,
+           posY :-60,
+           VelX :0,
+           VelY :10,
+           life :60,
+           sprite : 'enemy1' ,
+           damage :100,
+           coolDown :1000,
+           bulletSprite : 'enemy_shoot' ,
+           bulletVelocity:30, 
+           pattern :
           {
-            type:'wave',
-            scope:90.0,
-            nProj:1
-            }
+             type : 'Wave' ,
+             scope :90.0,
+             nProj :1
+           }
           },
           //enemigo 1
           {
-          posX:600,
-          posY:-60,
-          velX:10,
-          velY:0,
-          life:60,
-          sprite:'enemy1',
-          damage:100,
-          coolDown:1000,
-          bulletSprite:'enemy_shoot',
-          pattern:
+           posX :600,
+           posY :-60,
+           VelX :10,
+           VelY :0,
+           life :60,
+           sprite : 'enemy1' ,
+           damage :100,
+           coolDown :1000,
+           bulletSprite : 'enemy_shoot' ,
+           bulletVelocity:30, 
+           pattern :
           {
-            type:'wave',
-            scope:90.0,
-            nProj:1
-            }
+             type : 'Wave' ,
+             scope :90.0,
+             nProj :1
+           }
           }          
         ]//enemies
-    },//instante1
-  	{
-    time: 5000,
-    enemies:[
+    },//instant
+
+    {
+     time : 5000,
+     enemies :[
      //enemigo 1
      {
-          posX:200,
-          posY:-60,
-          velX:0,
-          velY:10,
-          life:60,
-          sprite:'enemy1',
-          damage:100,
-          coolDown:1000,
-          bulletSprite:'enemy_shoot',
-          pattern:
+           posX :200,
+           posY :-60,
+           VelX :0,
+           VelY :10,
+           life :60,
+           sprite : 'enemy1' ,
+           damage :100,
+           coolDown :1000,
+           bulletSprite : 'enemy_shoot' ,
+           bulletVelocity:30, 
+           pattern :
           {
-            type:'wave',
-            scope:90.0,
-            nProj:1
+             type : 'Wave' ,
+             scope :90.0,
+             nProj :1
           }
       },
       //enemigo 1
       {
-          posX:400,
-          posY:-60,
-          velX:0,
-          velY:10,
-          life:60,
-          sprite:'enemy1',
-          damage:100,
-          coolDown:1000,
-          bulletSprite:'enemy_shoot',
-          pattern:
+           posX :400,
+           posY :-60,
+           VelX :0,
+           VelY :10,
+           life :60,
+           sprite : 'enemy1' ,
+           damage :100,
+           coolDown :1000,
+           bulletSprite : 'enemy_shoot' ,
+           bulletVelocity:30, 
+           pattern :
           {
-            type:'wave',
-            scope:90.0,
-            nProj:1
-          }
+             type : 'Wave' ,
+             scope :90.0,
+             nProj :1
+           }
       },
-      //enemigo 2
+      //enemigo 1
       {
-          posX:500,
-          posY:-60,
-          velX:0,
-          velY:10,
-          life:60,
-          sprite:'enemy1',
-          damage:100,
-          coolDown:1000,
-          bulletSprite:'enemy_shoot',
-          pattern:
+           posX :500,
+           posY :-60,
+           VelX :0,
+           VelY :10,
+           life :60,
+           sprite : 'enemy1' ,
+           damage :100,
+           coolDown :1000,
+           bulletSprite : 'enemy_shoot' ,
+           bulletVelocity:30, 
+           pattern :
           {
-            type:'wave',
-            scope:90.0,
-            nProj:1
-          }
+             type : 'Wave' ,
+             scope :90.0,
+             nProj :1
+           }
       },
-      //enemigo 3
+      //enemigo 1
       {
-          posX:300,
-          posY:-100,
-          velX:0,
-          velY:10,
-          life:60,
-          sprite:'enemy1',
-          damage:100,
-          coolDown:1000,
-          bulletSprite:'enemy_shoot',
-          pattern:
+           posX :300,
+           posY :-100,
+           VelX :0,
+           VelY :10,
+           life :60,
+           sprite : 'enemy1' ,
+           damage :100,
+           coolDown :1000,
+           bulletSprite : 'enemy_shoot' ,
+           bulletVelocity:30, 
+           pattern :
           {
-            type:'wave',
-            scope:90.0,
-            nProj:1
-          }
+             type : 'Wave' ,
+             scope :90.0,
+             nProj :1
+           }
       },
-      //enemigo 3
+      //enemigo 1
       {
-          posX:600,
-          posY:-100,
-          velX:0,
-          velY:10,
-          life:60,
-          sprite:'enemy1',
-          damage:100,
-          coolDown:1000,
-          bulletSprite:'enemy_shoot',
-          pattern:
+           posX :600,
+           posY :-100,
+           VelX :0,
+           VelY :10,
+           life :60,
+           sprite : 'enemy1' ,
+           damage :100,
+           coolDown :1000,
+           bulletSprite : 'enemy_shoot' ,
+           bulletVelocity:30, 
+           pattern :
           {
-            type:'wave',
-            scope:90.0,
-            nProj:1
-          }
+             type : 'Wave' ,
+             scope :90.0,
+             nProj :1
+           }
       }
      ]//enemies
-    },
- 	{
-    time: 4000,
-    enemies:[
+    },//instant
+    
+  {
+     time : 4000,
+     enemies :[
      //enemigo 1
      {
-          posX:300,
-          posY:-60,
-          velX:0,
-          velY:10,
-          life:60,
-          sprite:'enemy1',
-          damage:100,
-          coolDown:1000,
-          bulletSprite:'enemy_shoot',
-          bulletVelocity:50//Por ejemplo
-          pattern:
+           posX :300,
+           posY :-60,
+           VelX :0,
+           VelY :10,
+           life :60,
+           sprite : 'enemy1' ,
+           damage :100,
+           coolDown :1000,
+           bulletSprite : 'enemy_shoot' ,
+           bulletVelocity:30, 
+           pattern :
           {
-            type:'wave',
-            scope:90.0,
-            nProj:1
-          }
+             type : 'Wave' ,
+             scope :90.0,
+             nProj :1
+           }
       },
       //enemigo 1
      {
-          posX:300,
-          posY:-100,
-          velX:0,
-          velY:10,
-          life:60,
-          sprite:'enemy1',
-          damage:100,
-          coolDown:1000,
-          bulletSprite:'enemy_shoot',
-          pattern:
+           posX :300,
+           posY :-100,
+           VelX :0,
+           VelY :10,
+           life :60,
+           sprite : 'enemy1' ,
+           damage :100,
+           coolDown :1000,
+           bulletSprite : 'enemy_shoot' ,
+           bulletVelocity:30, 
+           pattern :
           {
-            type:'wave',
-            scope:90.0,
-            nProj:1
-          }
+             type : 'Wave' ,
+             scope :90.0,
+             nProj :1
+           }
       },
       //enemigo 1
      {
-          posX:600,
-          posY:-60,
-          velX:0,
-          velY:10,
-          life:60,
-          sprite:'enemy1',
-          damage:100,
-          coolDown:1000,
-          bulletSprite:'enemy_shoot',
-          pattern:
+           posX :600,
+           posY :-60,
+           VelX :0,
+           VelY :10,
+           life :60,
+           sprite : 'enemy1' ,
+           damage :100,
+           coolDown :1000,
+           bulletSprite : 'enemy_shoot' ,
+           bulletVelocity:30, 
+           pattern :
           {
-            type:'wave',
-            scope:90.0,
-            nProj:1
-          }
+             type : 'Wave' ,
+             scope :90.0,
+             nProj :1
+           }
       },
       //enemigo 1
      {
-          posX:600,
-          posY:-100,
-          velX:0,
-          velY:10,
-          life:60,
-          sprite:'enemy1',
-          damage:100,
-          coolDown:1000,
-          bulletSprite:'enemy_shoot',
-          pattern:
+           posX :600,
+           posY :-100,
+           VelX :0,
+           VelY :10,
+           life :60,
+           sprite : 'enemy1' ,
+           damage :100,
+           coolDown :1000,
+           bulletSprite : 'enemy_shoot' ,
+           bulletVelocity:30, 
+           pattern :
           {
-            type:'wave',
-            scope:90.0,
-            nProj:1
-          }
+             type : 'Wave' ,
+             scope :90.0,
+             nProj :1
+           }
       }
       ]//enemies
-    },//time
-  	{
-    time: 7000,
-    i:[
+    },//instant  
+   
+  {
+     time : 7000,
+     enemies :[
      //Boss 1
      {
-          posX:400,
-          posY:-10,
-          velX:0,
-          velY:5,
-          life:500,
-          sprite:'Boss1',
-          damage:250,
-          coolDown:500,
-          bulletSprite:'Boss1_shoot',
-          pattern:
+           posX :400,
+           posY :-10,
+           VelX :0,
+           VelY :3,
+           life :500,
+           sprite : 'Boss1' ,
+           damage :250,
+           coolDown :500,
+           bulletSprite : 'Boss1_shoot' ,
+           bulletVelocity: 70,
+           pattern :
           {
-            type:'wave',
-            scope:120.0,
-            nProj:3
+             type : 'Wave' ,
+             scope :120.0,
+             nProj :3
           }
       }
       ]//enemies
-    }
-]
+    }//instant
+  
+]//fin nivel
