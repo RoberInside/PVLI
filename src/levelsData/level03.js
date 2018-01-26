@@ -185,10 +185,10 @@ module.exports = [
            VelX :30,
            VelY :30,
            life :60,
-           sprite : enemy1 ,
+           sprite : 'enemy1' ,
            damag :100,
            coolDown :1000,
-           bulletSprite : enemy_shoot ,
+           bulletSprite : 'enemy_shoot' ,
            patron :
           {
              tipo : 'wave' ,
