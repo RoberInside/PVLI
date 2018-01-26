@@ -7,7 +7,7 @@ function minutes(n){
 }
 
 //time is in ms by default you can use the auxiliar functions above to make ir more easy to read an write
-module.exports = [
+module.exports = [//LEVEL02
   {
      time :3000,
      enemies :
@@ -20,13 +20,13 @@ module.exports = [
            VelY :10,
            life :20,
            sprite : 'enemy2' ,
-           damag :50,
+           damage :50,
            coolDown :750,
            bulletSprite : 'enemy_shoot' ,
            bulletVelocity:70,
-           patron :
+           pattern :
           {
-             tipo : 'wave' ,
+             type : 'Wave' ,
              scope :110.0,
              nProj : 3
             }
@@ -39,13 +39,13 @@ module.exports = [
            VelY :10,
            life :20,
            sprite : 'enemy2' ,
-           damag :50,
+           damage :50,
            coolDown :750,
            bulletSprite : 'enemy_shoot' ,
            bulletVelocity:70,
-           patron :
+           pattern :
           {
-             tipo : 'wave' ,
+             type : 'Wave' ,
              scope :110.0,
              nProj : 3
             }
@@ -58,13 +58,13 @@ module.exports = [
            VelY :10,
            life :20,
            sprite : 'enemy2' ,
-           damag :50,
+           damage :50,
            coolDown :750,
            bulletSprite : 'enemy_shoot' ,
            bulletVelocity:70,
-           patron :
+           pattern :
           {
-             tipo : 'wave' ,
+             type : 'Wave' ,
              scope :110.0,
              nProj : 3
             }
@@ -77,13 +77,13 @@ module.exports = [
            VelY :10,
            life :20,
            sprite : 'enemy2' ,
-           damag :50,
+           damage :50,
            coolDown :750,
            bulletSprite : 'enemy_shoot' ,
            bulletVelocity:70,
-           patron :
+           pattern :
           {
-             tipo : 'wave' ,
+             type : 'Wave' ,
              scope :110.0,
              nProj : 3
             }
@@ -103,13 +103,13 @@ module.exports = [
            VelY :0,
            life :60,
            sprite : 'enemy1' ,
-           damag :100,
+           damage :100,
            coolDown :1000,
            bulletSprite : 'enemy_shoot' ,
            bulletVelocity:30, 
-           patron :
+           pattern :
           {
-             tipo : 'wave' ,
+             type : 'Wave' ,
              scope :90.0,
              nProj :1
            }
@@ -122,13 +122,13 @@ module.exports = [
            VelY :0,
            life :60,
            sprite : 'enemy1' ,
-           damag :100,
+           damage :100,
            coolDown :1000,
            bulletSprite : 'enemy_shoot' ,
            bulletVelocity:30, 
-           patron :
+           pattern :
           {
-             tipo : 'wave' ,
+             type : 'Wave' ,
              scope :90.0,
              nProj :1
            }
@@ -149,13 +149,13 @@ module.exports = [
            VelY :20,
            life :20,
            sprite : 'enemy2' ,
-           damag :50,
+           damage :50,
            coolDown :750,
            bulletSprite : 'enemy_shoot' ,
            bulletVelocity:70,
-           patron :
+           pattern :
           {
-             tipo : 'wave' ,
+             type : 'Wave' ,
              scope :110.0,
              nProj : 3
             }
@@ -175,13 +175,13 @@ module.exports = [
            VelY :20,
            life :20,
            sprite : 'enemy2' ,
-           damag :50,
+           damage :50,
            coolDown :750,
            bulletSprite : 'enemy_shoot' ,
            bulletVelocity:70,
-           patron :
+           pattern :
           {
-             tipo : 'wave' ,
+             type : 'Wave' ,
              scope :110.0,
              nProj : 3
             }
@@ -194,13 +194,13 @@ module.exports = [
            VelY :30,
            life :20,
            sprite : 'enemy2' ,
-           damag :50,
+           damage :50,
            coolDown :750,
            bulletSprite : 'enemy_shoot' ,
            bulletVelocity:70,
-           patron :
+           pattern :
           {
-             tipo : 'wave' ,
+             type : 'Wave' ,
              scope :110.0,
              nProj : 3
             }
@@ -213,13 +213,13 @@ module.exports = [
            VelY :0,
            life :60,
            sprite : 'enemy1' ,
-           damag :100,
+           damage :100,
            coolDown :1000,
            bulletSprite : 'enemy_shoot' ,
            bulletVelocity:30, 
-           patron :
+           pattern :
           {
-             tipo : 'wave' ,
+             type : 'Wave' ,
              scope :90.0,
              nProj :1
            }
@@ -232,13 +232,13 @@ module.exports = [
            VelY :0,
            life :60,
            sprite : 'enemy1' ,
-           damag :100,
+           damage :100,
            coolDown :1000,
            bulletSprite : 'enemy_shoot' ,
            bulletVelocity:30, 
-           patron :
+           pattern :
           {
-             tipo : 'wave' ,
+             type : 'Wave' ,
              scope :90.0,
              nProj :1
            }
@@ -258,13 +258,13 @@ module.exports = [
            VelY :0,
            life :1250,
            sprite : 'Boss2' ,
-           damag :350,
+           damage :350,
            coolDown :1500,
            bulletSprite : 'Boss2_shoot',
            bulletVelocity:40,
-           patron :
+           pattern :
           {
-             tipo : 'wave' ,
+             type : 'Wave' ,
              scope :90.0,
              nProj :5
             }

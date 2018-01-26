@@ -1,5 +1,9 @@
-var Projectile = function (state, game, posX, posY, velX, velY, damage, enemybullet) {
-	Phaser.Sprite.call(this, game, posX, posY, 'shoot');
+
+
+var Projectile = function (
+	state, game, posX, posY, velX, velY, damage, enemybullet, sprite
+) {
+	Phaser.Sprite.call(this, game, posX, posY, sprite);
 	this.game = game;
 	this.state = state;
 	this.enemybullet = enemybullet;

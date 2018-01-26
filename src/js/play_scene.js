@@ -1,6 +1,6 @@
 'use strict';
 var Player = require('./Player.js');
-var Enemy = require('./Enemy.js');
+var LevelManager = require('./LevelManager.js')
 var bg;
 
 var PlayScene = {
@@ -10,7 +10,9 @@ create: function () {
   this.playerBullets = []
   bg = this.game.add.tileSprite(0, 0, 800, 600,'bg');
    //Enable Physics engine
+  this.timer = new Phaser.Timer(this.game, false);
   this.game.physics.startSystem(Phaser.Physics.ARCADE);
+  this.LevelManager = new LevelManager(this);
   this.game.physics.setBoundsToWorld();
   initObjects(this);
   this.timer = new Phaser.Timer(this.game, false);
@@ -57,26 +59,12 @@ update: function () {
 
 module.exports = PlayScene;
 function initObjects(playScene){
-   playScene.player = new Player(playScene, playScene.game, playScene.game.world.centerX, playScene.game.world.centerY, 100, 500);
-   playScene.player.anchor.setTo(0.5, 0.5);
-   playScene.game.add.existing(playScene.player)
+    playScene.player = new Player(playScene, playScene.game, playScene.game.world.centerX, playScene.game.world.centerY, 100, 300, 'shoot');
+    playScene.player.anchor.setTo(0.5, 0.5);
+    playScene.game.add.existing(playScene.player)
+    playScene.enemies = playScene.game.add.group();
 
-   playScene.enemies = playScene.game.add.group();
-
-   playScene.enemies.add(
-     new Enemy(
-       playScene, playScene.game, 50, 100, 0, 0, 100, 'enemy', 30,
-       1000, 'shoot', 'Wave', 90, 5, 50
-     )
-
-   );
-
-    playScene.enemies.forEach(
-    function (e){
-      e.anchor.setTo(0.5, 0.5);
-    }
-
-  )
+   playScene.LevelManager.init();
 }
 function collides(A, B){
   return Phaser.Rectangle.intersects(A.getBounds(), B.getBounds());
