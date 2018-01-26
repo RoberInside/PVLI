@@ -23,7 +23,7 @@ module.exports = [
            damag :250,
            coolDown :1000,
            bulletSprite : 'Boss4_1_shoot' ,
-           bulletVelocity: 100
+           bulletVelocity: 100,
            patron :
           {
              tipo : 'wave' ,
@@ -110,7 +110,7 @@ module.exports = [
            bulletVelocity:30, 
            patron :
           {
-             tipo : wave ,
+             tipo : 'wave' ,
              scope :90.0,
              nProj :1
            }
