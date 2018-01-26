@@ -1,6 +1,7 @@
 'use strict';
 var Player = require('./Player.js');
 var Enemy = require('./Enemy.js');
+var Bullet = require ('./Projectile.js');
 var bg;
 
 
@@ -9,12 +10,18 @@ const MAX_ENEMIES = 50;
 var PlayScene = {
   create: function () {
    //Provisional Background. TODO: make the BG an animation
-    this.bullets = []
+    this.bullets = [];
     bg = this.game.add.tileSprite(0, 0, 800, 600,'bg');
    //Enable Physics engine
   this.game.physics.startSystem(Phaser.Physics.ARCADE);
   initObjects(this);
   this.timer = new Phaser.Timer(this.game, false);
+
+  
+
+
+  
+
   },
 
   update: function () {
@@ -22,11 +29,40 @@ var PlayScene = {
    bg.tilePosition.y += window.innerHeight * this.game.time.elapsedMS / 1000 * 0.25;
    this.ship.move(this.input.mousePointer.x, this.input.mousePointer.y);
    this.enemies.forEach((e)=> e.update());
+    
+   
+   if(this.ship.overlap(this.enemies) || this.bullets.forEach((b)=> b.overlap(this.ship))){     
+      
+        this.ship.damage(20);    
+      
+      }      
+      /*else if(i <= 2000){        
+          ol = true;
+          i = 0;        
+      }
+          
+    }
+    if(!ol)
+      i++;*/
+    
+   
+
+
+   
 
   // for (let b of this.bullets) b.showPos();
 
-  }
+  },
+  /*checkOverlap: function (spriteA, spriteB) {
+
+    var boundsA = spriteA.getBounds();
+    var boundsB = spriteB.getBounds();
+
+    return Phaser.Rectangle.intersects(boundsA, boundsB);
+
+  }*/
 };
+
 
 module.exports = PlayScene;
 function initObjects(playScene){
@@ -46,6 +82,7 @@ function initObjects(playScene){
        playScene, playScene.game, 50, 100, 0, 0, 100, 'enemy', 30,
        1000, 'shoot', 'Wave', 90, 5, 50
      )
+
    );
 
     playScene.enemies.forEach(

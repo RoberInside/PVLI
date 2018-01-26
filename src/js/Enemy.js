@@ -27,7 +27,7 @@ Enemy.prototype = Object.create (Phaser.Sprite.prototype);
 Enemy.prototype.constructor = Enemy;
 
 Enemy.prototype.damage = function (dmg) {
-	this.life -= dgm;
+	this.life -= dmg;
 	if (this.life <= 0)
 			this.kill();
 };
