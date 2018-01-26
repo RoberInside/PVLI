@@ -59,7 +59,7 @@ update: function () {
 
 module.exports = PlayScene;
 function initObjects(playScene){
-    playScene.player = new Player(playScene, playScene.game, playScene.game.world.centerX, playScene.game.world.centerY, 100, 300, 'shoot');
+    playScene.player = new Player(playScene, playScene.game, playScene.game.world.centerX, playScene.game.world.centerY, 100, 300, 'player_shoot');
     playScene.player.anchor.setTo(0.5, 0.5);
     playScene.game.add.existing(playScene.player)
     playScene.enemies = playScene.game.add.group();

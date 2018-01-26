@@ -2,7 +2,7 @@ const Projectile = require('./Projectile.js');
 
 
 var Player = function (state, game, x, y, health, coolDown, bulletSprite) {
-	Phaser.Sprite.call(this, game, x, y, 'ship');
+	Phaser.Sprite.call(this, game, x, y, 'player');
 	this.health = health || 1000;
 	this.anchor.set( 0.5, 0.5);
 	this.coolDown = coolDown;
