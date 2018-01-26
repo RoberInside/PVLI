@@ -2,15 +2,26 @@
  ## Cada nivel quedará descrito por un JSON con el siguiente formato descrito a continuación
 
 
+
  ###	Cada nivel se define como un array de de objetosJS(Instante) 
+=======
+ ###	Cada nivel se define como un array de de objetosJS(Instante)
+>>>>>>> gh-pages
  ### 	formados por un tiempo (ms que debe transcurrir desde el instante anterior a este)
  ### 	y un array de enemigos(objetosJS) que deben ser instanciados en ese instante
 
 ```JSON
+
 NivelXX{[	
 	instant = {
 		time	(uInt),
 		enemys	= 
+
+NivelXX{[
+	instant = {
+		time	(uInt),
+		enemys	=
+>>>>>>> gh-pages
 		[
 			{
 				posX,
@@ -22,7 +33,11 @@ NivelXX{[
 				damage,
 				coolDown,
 				bulletSprite,
+
 				patron = 
+=======
+				patron =
+
 				{
 					tipo,
 					scope,
@@ -39,7 +54,11 @@ NivelXX{[
 				damage,
 				coolDown,
 				bulletSprite,
+
 				patron = 
+
+				patron =
+
 				{
 					tipo,
 					scope,
@@ -50,7 +69,11 @@ NivelXX{[
 	},
 	instant = {
 		time	(uInt),
+
 		enemys	= 
+=======
+		enemys	=
+
 		[
 			{
 				posX,
@@ -62,7 +85,11 @@ NivelXX{[
 				damage,
 				coolDown,
 				bulletSprite,
+
 				patron = 
+=======
+				patron =
+
 				{
 					tipo,
 					scope,
@@ -79,7 +106,11 @@ NivelXX{[
 				damage,
 				coolDown,
 				bulletSprite,
+
 				patron = 
+=======
+				patron =
+
 				{
 					tipo,
 					scope,
@@ -87,7 +118,11 @@ NivelXX{[
 				}
 			},
 		]
+
 	}	
+=======
+	}
+>>>>>>> gh-pages
 ]}
 ```
 ## Descripción de la API del objeto Enemy
@@ -114,4 +149,8 @@ Enemy {
 							  proporciona el patrón(velocidad) y los atributos locales del enemigo				 			 *
 	+ 'move()'				* En funcion de la definición que se haga del mismo dedidira el cambio de velocidad del enemigo *
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> gh-pages

@@ -4,14 +4,17 @@ var LevelManager = require('./LevelManager.js')
 var bg;
 
 var PlayScene = {
+
 create: function () {
    //Provisional Background. TODO: make the BG an animation
   this.enemyBullets = [];
   this.playerBullets = []
+
   bg = this.game.add.tileSprite(0, 0, 800, 600,'bg');
    //Enable Physics engine
   this.timer = new Phaser.Timer(this.game, false);
   this.game.physics.startSystem(Phaser.Physics.ARCADE);
+
   this.LevelManager = new LevelManager(this);
   this.game.physics.setBoundsToWorld();
   initObjects(this);
@@ -20,6 +23,7 @@ create: function () {
 
 update: function () {
     //background scroll speed every 4s
+
    bg.tilePosition.y += window.innerHeight * this.game.time.elapsedMS / 1000 * 0.25;
    //Move the player to de cursor position
    this.player.move(this.input.mousePointer.x, this.input.mousePointer.y);
@@ -59,6 +63,7 @@ update: function () {
 
 module.exports = PlayScene;
 function initObjects(playScene){
+
     playScene.player = new Player(playScene, playScene.game, playScene.game.world.centerX, playScene.game.world.centerY, 100, 300, 'player_shoot');
     playScene.player.anchor.setTo(0.5, 0.5);
     playScene.game.add.existing(playScene.player)

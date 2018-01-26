@@ -51,6 +51,7 @@ var Pattern = function (enemy, type, cadency, nProjectiles, scope) {
      switch (this.type) {
        case "Wave": break;
        case "Spring":
+
         this.initialAngle = undefined;
         this.finalAngle = undefined;
         this.theta = undefined;
@@ -60,6 +61,7 @@ var Pattern = function (enemy, type, cadency, nProjectiles, scope) {
      }
      //Initialize new attrs.
      switch (newType) {
+
        case "Wave": break;
       case "Spring":
         self.sentido = true;
@@ -69,11 +71,12 @@ var Pattern = function (enemy, type, cadency, nProjectiles, scope) {
       break;
       default:
 
+
      }
      this.type = newType;
   }
-};
 
+};
 
 
 module.exports = Pattern;

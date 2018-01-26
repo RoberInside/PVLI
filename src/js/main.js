@@ -36,17 +36,18 @@ var PreloaderScene = {
 
     // TODO: load here the assets for the game
     this.game.load.image('bg', 'images/background.png');
+
     this.game.load.image('player', 'images/player.png');
     this.game.load.image('enemy', 'images/enemy.png');
     this.game.load.image('enemy1', 'images/enemy1.png');
     this.game.load.image('enemy2', 'images/enemy2.png');
     this.game.load.image('enemy3', 'images/enemy3.png');
     this.game.load.image('enemy4', 'images/enemy4.png');
-    this.game.load.image('boos1', 'images/Boss1.png');
-    this.game.load.image('boos2', 'images/Boos2.png');
-    this.game.load.image('boos3', 'images/Boos3.png');
-    this.game.load.image('boos4_1', 'images/Boos4_1.png');
-    this.game.load.image('boos4_2', 'images/Boos4_2.png');
+    this.game.load.image('boss1', 'images/Boss1.png');
+    this.game.load.image('boss2', 'images/Boss2.png');
+    this.game.load.image('boss3', 'images/Boss3.png');
+    this.game.load.image('boss4_1', 'images/Boss4_1.png');
+    this.game.load.image('boss4_2', 'images/Boss4_2.png');
     this.game.load.image('player_shoot', 'images/player_shoot.png');
     this.game.load.image('enemy_shoot', 'images/enemy_shoot.png');
     this.game.load.image('boss1_shoot', 'images/Boss1_shoot.png');
@@ -67,13 +68,13 @@ var PreloaderScene = {
     this.game.load.image('button', 'images/button.png');
 
   },
- 
+
   create: function(){
-    
+
 //this.game.state.start('pause');
     var key = game.input.keyboard.addKey(Phaser.keyboard.ESC);
     key.onDown.add(pauseMenu, this);
-    
+
   },
 
   pauseMenu: function() {
@@ -82,7 +83,7 @@ var PreloaderScene = {
      actionOnClick, this, 2, 1, 0);
   },
   actionOnClick: function() {
-    
+
     button != button;
 
   },
@@ -91,7 +92,7 @@ var MenuScene = {
 preload: function(){
 
   this.game.load.image('preloader_bar', 'images/preloader_bar.png');
- 
+
 
  this.menuBg = this.game.add.sprite(
       this.game.world.centerX, this.game.world.centerY, 'menuBg'
@@ -106,8 +107,8 @@ start: function(){
 
 create: function(){
 
-    var button = this.game.add.button(this.game.world.centerX - 150, 
-      this.game.world.centerY, 'button',this.start, this, 0, 0, 0);    
+    var button = this.game.add.button(this.game.world.centerX - 150,
+      this.game.world.centerY, 'button',this.start, this, 0, 0, 0);
 
 },
 
