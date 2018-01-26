@@ -14,6 +14,7 @@ var Enemy = function(
 	this.body.velocity.x = vx;
 	this.body.velocity.y = vy;
 	this.life = life;
+	this.damage = damage;
 	this.bSprite = bulletSprite;
 	this.shootColdDown = coolDown;
 
@@ -26,17 +27,16 @@ var Enemy = function(
 Enemy.prototype = Object.create (Phaser.Sprite.prototype);
 Enemy.prototype.constructor = Enemy;
 
-Enemy.prototype.damage = function (dmg) {
+Enemy.prototype.hurt = function (dmg) {
 	this.life -= dmg;
 	if (this.life <= 0)
 			this.kill();
 };
 
 Enemy.prototype.createBullet = function (vx ,vy) {
-	console.log("Create Bullet with " + vx +", " + vy+ " velocity");
-	let bullet = new Projectile(this.state, this.game, this.x, this.y, vx, vy);
+	let bullet = new Projectile(this.state, this.game, this.x, this.y, vx, vy, this.damage);
 	this.game.add.existing(bullet);
-	this.state.bullets.push(bullet);
+	this.state.enemyBullets.push(bullet);
 
 }
 
